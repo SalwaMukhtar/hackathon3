@@ -1,7 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import {FaFacebook} from "react-icons/fa"
+import { RxInstagramLogo } from "react-icons/rx";
+import {FaLinkedin } from "react-icons/fa"
+
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -85,30 +88,36 @@ function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="mt-12 border-t border-gray-200 pt-8">
-        <div className="flex justify-between items-center w-[90%] mx-auto">
-          <p className="text-gray-500">&copy; Webecy - All Rights Reserved. Muqaddas Fatima</p>
-          <div className="flex space-x-4">
-            <a href="https://github.com/MuqaddasFatima24" className="w-8 h-8 rounded-full bg-[#151875] flex items-center justify-center text-white hover:bg-blue-700">
-              <FaFacebookF />
-            </a>
-            <a href="@muqadas_fatima25" className="w-8 h-8 rounded-full bg-[#151875] flex items-center justify-center text-white hover:bg-blue-700">
-              <FaTwitter />
-            </a>
-            <a href="@muqadas_fatima25" className="w-8 h-8 rounded-full bg-[#151875] flex items-center justify-center text-white hover:bg-blue-700">
-              <FaInstagram />
-            </a>
-          </div>
-        </div>
-      </div>
+      <div className="bg-[#E7E4F8]  ">
+    <div className="container px-5  h-[80px] sm:h-[53px] mx-auto flex items-center sm:flex-row flex-col">
+      
+    <p className="text-sm text-[#9DA0AE] sm:ml-6 sm:mt-0 mt-4">
+        © 2024 Hekto —
+        <a
+          href="https://twitter.com/knyttnev"
+          rel="noopener noreferrer"
+          className="text-[#9DA0AE] ml-1"
+          target="_blank"
+        >
+          @Right Reserved
+        </a>
+      </p>
+      <span className="flex flex-row sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+     <div className="w-5 h-5 " ><a href="#"><FaFacebook  /></a></div> 
+      <div className="w-5 h-5  ml-3 text-gray-900"><a href="#"><RxInstagramLogo /></a></div>
+        <div className="w-5 h-5  ml-3 text-gray-900"><a href="#"><FaLinkedin  /></a></div>
+
+    </span>
     </div>
-  );
-}
+  </div>
 
-export default Footer;
+      
+        </div>
+    );
+  };
   
-
-
+  export default Footer;
 
 
  
